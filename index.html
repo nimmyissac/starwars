@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="moduleMain">
+
+  <head >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/stylesheet/main.css">
+  </head>
+
+  <body  ng-controller="Display">
+   <div ng-repeat="n in names track by $index">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="mainDiv">
+            <div class="img">
+              <img class="poster" src="assets/poster.jpg">
+            </div>
+            <div class="movieTitle">
+              {{n}}
+            </div>
+            <div class="rating">
+             <span><img class="ratingImg" src ="assets/star_filled.png"></span>
+             <span><img class="ratingImg" src ="assets/star_filled.png"></span>
+             <span><img class="ratingImg" src ="assets/star_filled.png"></span>
+             <span><img class="ratingImg" src ="assets/star_filled.png"></span>
+             <span><img class="ratingImg" src ="assets/star_empty.png"></span>
+          </div>
+          <div class="cost">
+            $15
+          </div>
+          <div class="btnDiv">
+            <button type="button" class="btn btn-success">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+
+    </div>
+   </div>
+    <footer >
+      <small>&copy; StarWars</small>
+    </footer>
+
+    <script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src = "js/main.js" ></script>
+  </body>
+</html>

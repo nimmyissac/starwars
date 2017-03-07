@@ -1,0 +1,21 @@
+.poster {
+ width: 100%;
+ height:100%;
+ margin-top: 2%;
+ margin-bottom: 2%;
+}
+.movieTitle {
+ font-weight: bold;
+ text-align: center;
+}
+.rating{
+  width:30%;
+  margin: 0 auto;
+}
+.cost {
+  text-align: center;
+}
+.btnDiv {
+  width: 30%;
+  margin: 0 auto;
+}
